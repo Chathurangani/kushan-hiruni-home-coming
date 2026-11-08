@@ -1604,3 +1604,29 @@ h1 {
     font-weight: 600;
 }
 
+
+
+
+/* FLOWER HEART BURST ANIMATION */
+.burst-heart {
+    position: fixed;
+    font-size: 1.5rem;
+    pointer-events: none;
+    z-index: 9999;
+    animation: burstFly 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+@keyframes burstFly {
+    0% {
+        transform: translate(0, 0) scale(0.5);
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate(var(--dest-x), var(--dest-y)) scale(1.4);
+        opacity: 0;
+    }
+}
+

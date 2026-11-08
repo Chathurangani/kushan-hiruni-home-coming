@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // Start slow vertical page auto-scroll after card appears
                 setTimeout(startAutoScroll, 500);
-            }, 1800); 
+            }, 200); 
         });
     }
 
@@ -106,27 +106,76 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 250);
     }
 
-    // Massive Burst
-    function triggerMassiveHeartBurst() {
-        const container = document.getElementById('hearts-container');
-        if (!container) return;
-       // const icons = ['💕', '💕', '💕', '💕', '💕', '💕', '💕'];
-        const icons = ['🤍', '♡', '☆', '🤍','🤍', '♡', '☆', '🤍'];
+    // // Massive Burst
+    // function triggerMassiveHeartBurst() {
+    //     const container = document.getElementById('hearts-container');
+    //     if (!container) return;
+    //    // const icons = ['💕', '💕', '💕', '💕', '💕', '💕', '💕'];
+    //     const icons = ['🤍', '♡', '☆', '🤍','🤍', '♡', '☆', '🤍'];
 
-        for (let i = 0; i < 70; i++) {
-            setTimeout(() => {
-                const heart = document.createElement('div');
-                heart.className = 'falling-heart';
-                heart.innerText = icons[Math.floor(Math.random() * icons.length)];
-                heart.style.left = Math.random() * 100 + 'vw';
-                heart.style.animationDuration = (Math.random() * 2 + 1.5) + 's';
-                heart.style.fontSize = (Math.random() * 22 + 16) + 'px';
+    //     for (let i = 0; i < 70; i++) {
+    //         setTimeout(() => {
+    //             const heart = document.createElement('div');
+    //             heart.className = 'falling-heart';
+    //             heart.innerText = icons[Math.floor(Math.random() * icons.length)];
+    //             heart.style.left = Math.random() * 100 + 'vw';
+    //             heart.style.animationDuration = (Math.random() * 2 + 1.5) + 's';
+    //             heart.style.fontSize = (Math.random() * 22 + 16) + 'px';
                 
-                container.appendChild(heart);
-                setTimeout(() => heart.remove(), 4000);
-            }, i * 25);
-        }
+    //             container.appendChild(heart);
+    //             setTimeout(() => heart.remove(), 4000);
+    //         }, i * 25);
+    //     }
+    // }
+
+    // මල් දෙකේ ස්ථාන වලින් හාට්ස් විසිවන ෆੰක්සන් එක
+function triggerMassiveHeartBurst() {
+    const topFlower = document.querySelector('.flower-top');
+    const bottomFlower = document.querySelector('.flower-bottom');
+    
+    // මල් දෙකේ තිරයේ ඇති පිහිටීම (Coordinates) ලබා ගැනීම
+    const topRect = topFlower ? topFlower.getBoundingClientRect() : { left: 50, top: 50 };
+    const bottomRect = bottomFlower ? bottomFlower.getBoundingClientRect() : { left: window.innerWidth - 100, top: window.innerHeight - 100 };
+
+    // උඩ මලෙන් හාට්ස් විසිරීම (Left-Top flower burst)
+   createFlowerHeartBurst(topRect.left + 50, topRect.top + 50, -10, 100);
+
+    // යට මලෙන් හාට්ස් විසිරීම (Bottom-Right flower burst)
+   createFlowerHeartBurst(bottomRect.left + 50, bottomRect.top + 50, -170, -80);
+}
+
+function createFlowerHeartBurst(originX, originY, minAngle, maxAngle) {
+    const heartSymbols = ['🤍', '♡', '☆', '🤍','🤍', '♡', '☆', '🤍','🤍', '♡', '☆', '🤍','🤍', '♡', '☆', '🤍'];
+    const count = 25; // විසිවන හාට් සංඛ්‍යාව
+
+    for (let i = 0; i < count; i++) {
+        const heart = document.createElement('div');
+        heart.className = 'burst-heart';
+        heart.innerHTML = heartSymbols[Math.floor(Math.random() * heartSymbols.length)];
+        
+        // මල පිහිටි තැනින් ආරම්භ වීම
+        heart.style.left = `${originX}px`;
+        heart.style.top = `${originY}px`;
+
+        // විවිධ දිශාවලට ගමන් කිරීමට අහඹු අගයන් ලබා දීම
+        // const angle = (Math.random() * (maxAngle - minAngle) + minAngle) * (Math.PI / 180);
+        // const distance = Math.random() * 180 + 80; // විසිවී යන දුර
+        const angle = (Math.random() * (maxAngle - minAngle) + minAngle) * (Math.PI / 180);
+        const distance = Math.random() * 200 + 70; // විසිවී යන දුර
+        const destX = Math.cos(angle) * distance;
+        const destY = Math.sin(angle) * distance;
+
+        heart.style.setProperty('--dest-x', `${destX}px`);
+        heart.style.setProperty('--dest-y', `${destY}px`);
+        
+        document.body.appendChild(heart);
+
+        // Animation එක අවසන් වූ පසු ඊට අදාළ HTML element එක ඉවත් කිරීම
+        setTimeout(() => {
+            heart.remove();
+        }, 1500);
     }
+}
 
 
 
