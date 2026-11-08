@@ -1383,7 +1383,7 @@ h1 {
 .floating-flower-container {
     position: absolute;
     top: 2800px;
-    left: 85%;
+    left: 78%;
     transform: translateX(-50%);
     z-index: 2;
     pointer-events: none; /* බටන් ක්ලික් කිරීමට බාධා නොවන සේ */
@@ -1399,15 +1399,15 @@ h1 {
 /* Moving Flower Animation Styles */
 .floating-flower-container2 {
     position: absolute;
-    top: 500px;
-    left: 10%;
+    top: 400px;
+    left: 19%;
     transform: translateX(-50%);
     z-index: 2;
     pointer-events: none; /* බටන් ක්ලික් කිරීමට බාධා නොවන සේ */
 }
 
 .moving-flower2 {
-    width:250px;/*මලේ ප්‍රමාණය අවශ්‍ය පරිදි වෙනස් කරන්න */
+    width:200px;/*මලේ ප්‍රමාණය අවශ්‍ය පරිදි වෙනස් කරන්න */
     height: auto;
     animation: floatFlower 4s ease-in-out infinite;
     filter: drop-shadow(0 5px 10px rgba(0,0,0,0.15));
@@ -1417,15 +1417,15 @@ h1 {
 /* Moving Flower Animation Styles */
 .floating-flower-container3 {
     position: absolute;
-    top: 850px;
-    left: 80%;
+    top: 900px;
+    left: 70%;
     transform: translateX(-50%);
     z-index: 2;
     pointer-events: none; /* බටන් ක්ලික් කිරීමට බාධා නොවන සේ */
 }
 
 .moving-flower3 {
-    width:300px;/*මලේ ප්‍රමාණය අවශ්‍ය පරිදි වෙනස් කරන්න */
+    width:250px;/*මලේ ප්‍රමාණය අවශ්‍ය පරිදි වෙනස් කරන්න */
     height: auto;
     animation: floatFlower 4s ease-in-out infinite;
     filter: drop-shadow(0 5px 10px rgba(0,0,0,0.15));
@@ -1434,15 +1434,15 @@ h1 {
 /* Moving Flower Animation Styles */
 .floating-flower-containerleaf {
     position: absolute;
-    top: 2100px;
-    left: 10%;
+    top: 2150px;
+    left: 20%;
     transform: translateX(-50%);
     z-index: 2;
     pointer-events: none; /* බටන් ක්ලික් කිරීමට බාධා නොවන සේ */
 }
 
 .moving-flowerleaf {
-    width:300px;/*මලේ ප්‍රමාණය අවශ්‍ය පරිදි වෙනස් කරන්න */
+    width:250px;/*මලේ ප්‍රමාණය අවශ්‍ය පරිදි වෙනස් කරන්න */
     height: auto;
     animation: floatFlower 4s ease-in-out infinite;
     filter: drop-shadow(0 5px 10px rgba(0,0,0,0.15));
@@ -1451,7 +1451,7 @@ h1 {
 /* Moving Flower Animation Styles */
 .floating-flower-containerbnch {
     position: absolute;
-    top: 4080px;
+    top: 4090px;
     left: 50%;
     transform: translateX(-40%);
     z-index: 2;
@@ -1459,7 +1459,7 @@ h1 {
 }
 
 .moving-flowerbnch {
-    width:250px;/*මලේ ප්‍රමාණය අවශ්‍ය පරිදි වෙනස් කරන්න */
+    width:150px;/*මලේ ප්‍රමාණය අවශ්‍ය පරිදි වෙනස් කරන්න */
     height: auto;
     animation: floatFlower 4s ease-in-out infinite;
     filter: drop-shadow(0 5px 10px rgba(0,0,0,0.15));
