@@ -7,6 +7,9 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Pattaya&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <!-- Swiper CSS CDN (ඔබේ <head> කොටසට එකතු කරන්න) -->
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body>
 
@@ -38,19 +41,27 @@
             </div>
         </div> -->
 
-        <!-- COVER SCREEN -->
+
+<!-- COVER SCREEN -->
 <div id="cover-screen">
-    <!-- Moving Flower Image -->
-    <!-- <div class="floating-flower-container">
-        <img src="images/flwr.png" alt="Flower" class="moving-flower">
-    </div> -->
 
     <div class="cover-card">
+
+        <!-- Decorative floral images -->
+        <img src="images/flower-top.png"
+             alt=""
+             class="cover-flower flower-top">
+
+        <img src="images/flower-bottom.png"
+             alt=""
+             class="cover-flower flower-bottom">
+
         <div class="heart-badge">❤</div>
-        <h1>Kushan Pathum </h1>
+
+        <h1>Kushan Pathum</h1>
         <span class="ampersand">&amp;</span>
         <h1>Hiruni Himasha</h1>
-        
+
         <div class="date-text">December 12, 2026</div>
 
         <div class="guest-box">
@@ -58,19 +69,23 @@
             <h2 id="guest-name-display">Ms.</h2>
         </div>
 
-        <p style="font-size: 0.9rem; color: #554; margin-bottom: 25px;">
-            Join us as we celebrate love, laughter, and the beginning of forever. ❤️
+        <p class="cover-message">
+            Join us as we celebrate love, laughter,
+            and the beginning of forever. ❤️
         </p>
 
         <button class="open-btn" id="open-btn">Open</button>
+
     </div>
 </div>
 
+
         <!-- MAIN INVITATION CONTENT -->
         <div id="main-invitation">
-            
+          
             <!-- Envelope & Couple Photo -->
             <div class="envelope-section">
+                
                 <div class="envelope-container">
                    <!-- <div class="gallery-slide"><img src="images/img4.JPEG" alt="Gallery Photo 1"></div> -->
 
@@ -91,8 +106,8 @@
         <!-- කාඩ්පතේ පිටුපස (Details) -->
         <div class="card-face card-back">
           <!-- <h2>Kushan Pathum  & Hiruni Himasha</h2> -->
-          <p>Save the Date</p>
-          <p>December 12, 2026</p>
+          <!-- <p>Save the Date</p>
+          <p>December 12, 2026</p> -->
         </div>
       </div>
     </div>
@@ -102,31 +117,52 @@
   </div>
 </div>
                 </div>
-                <h2 style="font-size: 1.6rem; color: #f7efe5; font-weight: 400;">Kushan Pathum</h2>
-                <span style="font-family: 'Pattaya', cursive; color: var(--accent-gold); font-size: 1.3rem;">&amp;</span>
-                <h2 style="font-size: 1.6rem; color: #f7efe5; font-weight: 400;">Hiruni Himasha</h2>
+                  <p>Save the Date</p>
+          <p>December 12, 2026</p>
+                <h2 style="font-size: 1.6rem; color: #a86819; font-weight: 400;">Kushan Pathum</h2>
+                <!-- <span style="font-family: 'Pattaya', cursive; color: var(--accent-gold); font-size: 1.3rem;">&amp;</span> -->
+                <span style="font-family: 'Pattaya', cursive; color: #a86819; font-size: 1.3rem;">&amp;</span>
+                <h2 style="font-size: 1.6rem; color: #a86819; font-weight: 400;">Hiruni Himasha</h2>
             </div>
 
             <!-- Ceremony Info Card -->
             <div class="info-card">
 
-                <p style="font-size: 0.75rem; letter-spacing: 2px; color: #ccc; text-transform: uppercase; margin-bottom: 15px;">Mark 10:9 (KJV) ✝️💍 card 150
-“What therefore God hath joined together, let not man put asunder.” (bible wording)</p>
+                <p style="font-size: 0.75rem; letter-spacing: 2px; color: #ccc; text-transform: uppercase; margin-bottom: 15px;">
+“What therefore God hath joined together, let not man put asunder.” (Mark 10:9)</p>
                 <h3>Ceremony Info</h3>
                   
                 <div class="parents-grid">
                     <div class="parents-col">
                         <h4>Mr. &amp; Mrs.</h4>
-                        <p>Wettasinghe</p>
+                        <p>Fernando</p>
                     </div>
                     <div style="width: 1px; background: rgba(255,255,255,0.2);"></div>
                     <div class="parents-col">
                         <h4>Mr. &amp; Mrs.</h4>
-                        <p>Fernando</p>
+                        <p>Wettasinghe</p>
                     </div>
                     <div class="floating-flower-container">
         <img src="Images/flwr.png" alt="Flower" class="moving-flower">
     </div> 
+
+               <div class="floating-flower-container2">
+        <img src="Images/flower-bottom.png" alt="Flower" class="moving-flower2">
+    </div>
+
+                  <div class="floating-flower-container3">
+        <img src="Images/flower-top.png" alt="Flower" class="moving-flower3">
+    </div>
+
+                   <div class="floating-flower-containerleaf">
+        <img src="Images/leaf.png" alt="Flower" class="moving-flowerleaf">
+    </div>
+
+                   <div class="floating-flower-containerbnch">
+        <img src="Images/flwerbnch.png" alt="Flower" class="moving-flowerbnch">
+    </div>
+           
+           
                 </div>
 
                 <p style="font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase; color: var(--accent-gold); margin-bottom: 15px;">
@@ -143,7 +179,7 @@
             </div>
 
    <!-- PHOTO GALLERY SECTION -->
-<div class="gallery-section">
+<!-- <div class="gallery-section">
     <h3 class="gallery-title">Photo Gallery</h3>
     
     <div class="gallery-wrapper">
@@ -162,12 +198,62 @@
         
         <button class="gallery-arrow right-arrow" id="next-photo-btn">❯</button>
     </div>
+</div> -->
+
+
+
+
+<!-- PHOTO GALLERY SECTION -->
+<div class="gallery-section">
+
+    <h3 class="gallery-title">Photo Gallery</h3>
+
+    <div class="gallery-wrapper">
+
+        <button class="gallery-arrow left-arrow" id="prev-photo-btn">
+            ❮
+        </button>
+
+        <div class="swiper mySwiper">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide"><img src="Images/img1.jpeg" alt="Gallery Photo 1"></div>
+                <div class="swiper-slide"><img src="Images/img2.jpeg" alt="Gallery Photo 2"></div>
+                <div class="swiper-slide"><img src="Images/img3.jpeg" alt="Gallery Photo 3"></div>
+                <div class="swiper-slide"><img src="Images/img4.jpeg" alt="Gallery Photo 4"></div>
+                <div class="swiper-slide"><img src="Images/img5.jpeg" alt="Gallery Photo 5"></div>
+                <div class="swiper-slide"><img src="Images/img6.jpeg" alt="Gallery Photo 6"></div>
+                <div class="swiper-slide"><img src="Images/img7.jpeg" alt="Gallery Photo 7"></div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+        <button class="gallery-arrow right-arrow" id="next-photo-btn">
+            ❯
+        </button>
+
+    </div>
+
+    <!-- PHOTO COUNT -->
+    <div class="gallery-counter">
+        <span id="current-photo">1</span>
+        /
+        <span id="total-photos">7</span>
+    </div>
+
 </div>
 
-<!-- PHOTO POPUP MODAL -->
+<!-- PHOTO POPUP MODAL (Only ONE modal) -->
 <div id="photo-modal" class="photo-modal">
+
     <span class="modal-close">&times;</span>
-    <img class="modal-content" id="modal-img" alt="Zoomed Photo">
+
+    <img id="modal-img" class="modal-content" alt="Zoomed Photo">
+
 </div>
 
             <!-- Reception Info & Calendar -->
@@ -178,21 +264,47 @@
                     11:00 AM &nbsp;|&nbsp; Saturday, December 12, 2026
                 </p>
 
-                <div class="calendar-box">
-                    <h4>December 2026</h4>
-                    <table class="calendar-table">
-                        <thead>
-                            <tr><th>Mo</th><th>Tu</th><th>We</th><th>Th</th><th>Fr</th><th>Sa</th><th>Su</th></tr>
-                        </thead>
-                        <tbody>
-                            <tr><td></td><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td></tr>
-                            <tr><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td></tr>
-                            <tr><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td></tr>
-                            <tr><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td></tr>
-                            <tr><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td><span class="highlight-date">12</span></td><td>1</td></tr>
-                        </tbody>
-                    </table>
-                </div>
+                <!-- Countdown Timer -->
+    <div class="countdown-box">
+        <h4>Countdown to Our Special Day</h4>
+        <div class="countdown-timer">
+            <div class="countdown-item">
+                <span id="days">00</span>
+                <small>Days</small>
+            </div>
+            <div class="countdown-item">
+                <span id="hours">00</span>
+                <small>Hours</small>
+            </div>
+            <div class="countdown-item">
+                <span id="minutes">00</span>
+                <small>Minutes</small>
+            </div>
+            <div class="countdown-item">
+                <span id="seconds">00</span>
+                <small>Seconds</small>
+            </div>
+        </div>
+    </div>
+
+
+            <div class="calendar-box">
+    <h4>December 2026</h4>
+    <table class="calendar-table">
+        <thead>
+            <tr><th>Mo</th><th>Tu</th><th>We</th><th>Th</th><th>Fr</th><th>Sa</th><th>Su</th></tr>
+        </thead>
+        <tbody>
+            <!-- December 1 starts on Tuesday -->
+            <tr><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+            <!-- December 12 is on Saturday in the second week -->
+            <tr><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td><span class="highlight-date">12</span></td><td>13</td></tr>
+            <tr><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td></tr>
+            <tr><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td></tr>
+            <tr><td>28</td><td>29</td><td>30</td><td>31</td><td></td><td></td><td></td></tr>
+        </tbody>
+    </table>
+</div>
 
                 <button class="action-btn" id="calendar-btn">Add to Calendar</button>
                 <br>
@@ -264,7 +376,7 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.55163456789!2d80.1345!3d6.9512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2or2f4QQSr4zoR%3A0x8536f9e319b3a435!2sLavenro%20Garden%20Hotel!5e0!3m2!1sen!2slk!4v1700000000000!5m2!1sen!2slk" allowfullscreen="" loading="lazy"></iframe>
     </div>
     
-    <a href="https://maps.google.com" target="_blank" class="action-btn" style="margin-top: 15px;">Get Directions</a>
+    <a href="https://maps.app.goo.gl/7zp4ADswWT6rykGd6" target="_blank" class="action-btn" style="margin-top: 15px;">Get Directions</a>
 </div>
 
             <!-- Guestbook & Wishes -->
@@ -331,7 +443,7 @@
 
             <div class="footer-note">
                 <p> Your love, wishes, and presence mean more to us than we can put into words. We're truly grateful to have you sharing in the beginning of this beautiful new chapter of our lives.</p>
-                <p style="margin-top: 15px; font-family: 'Pattaya', cursive; color: var(--accent-gold); font-size: 1.1rem;">Kushan Pathum  &amp; Hiruni Himasha</p>
+                <p style="margin-top: 15px; font-family: 'Pattaya', cursive; color: #a86819; font-size: 1.1rem;">Kushan Pathum  &amp; Hiruni Himasha</p>
                 
             </div>
 
@@ -349,7 +461,7 @@
 
     <script src="script.js"></script>
 
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 </body>
 </html>
