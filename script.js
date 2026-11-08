@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
         autoScrollInterval = setInterval(() => {
             const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
             if (window.scrollY < maxScroll) {
-                window.scrollBy({ top: 1, behavior: 'smooth' });
+                window.scrollBy({ top: 3, behavior: 'smooth' });
             } else {
                 clearInterval(autoScrollInterval);
             }
