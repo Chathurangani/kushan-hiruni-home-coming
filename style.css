@@ -1588,3 +1588,27 @@ h1 {
     font-weight: 600;
 }
 
+/* Guestbook textarea සහ inputs සඳහා font වෙනස් කිරීම */
+.form-control, #guest-wish, #guest-name {
+    font-family: 'serif'; /* ඔබට අවශ්‍ය font එකක් මෙහි සඳහන් කළ හැක (උදා: 'Poppins', 'Segoe UI', හෝ වෙනත් font එකක්) */
+    font-size: 1rem;
+    color: #e9e3e3; /* ඔබ ටයිප් කරන අකුරු වල පාට (Dark color) */
+    background-color: rgba(255, 255, 255, 0.9); /* පසුබිම් පාට */
+    border: 1px solid var(--accent-gold, #ebe7db);
+    border-radius: 8px;
+    padding: 12px;
+}
+
+/* Placeholder (Placeholder එකේ අකුරු වල පාට සහ විලාසය) */
+.form-control::placeholder, #guest-wish::placeholder {
+    color: #888888;
+    font-style: italic;
+    font-size: 0.95rem;
+}
+
+/* ටයිප් කරන විට කර්සරය හෝ කොටුව ක්‍රියාත්මක වන අවස්ථාව (Focus) */
+.form-control:focus, #guest-wish:focus {
+    outline: none;
+    border-color: var(--accent-gold, #ebe6d9);
+    box-shadow: 0 0 8px rgba(204, 202, 197, 0.4);
+}
