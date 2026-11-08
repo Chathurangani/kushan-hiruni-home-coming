@@ -128,19 +128,76 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Smooth Vertical Auto-Scroll Function for Page
-    function startAutoScroll() {
-        if (autoScrollInterval) return;
 
-        autoScrollInterval = setInterval(() => {
-            const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-            if (window.scrollY < maxScroll) {
-                window.scrollBy({ top: 3, behavior: 'smooth' });
-            } else {
-                clearInterval(autoScrollInterval);
-            }
-        }, 35);
+
+//     // Smooth Vertical Auto-Scroll Function for Page
+//     function startAutoScroll() {
+//         if (autoScrollInterval) return;
+
+//         autoScrollInterval = setInterval(() => {
+//             const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+//             if (window.scrollY < maxScroll) {
+//                 window.scrollBy({ top: 3, behavior: 'smooth' });
+//             } else {
+//                 clearInterval(autoScrollInterval);
+//             }
+//         }, 35);
+//     }
+
+//     // Stop auto-scroll when clicking or typing in message box
+
+// const guestMessage = document.getElementById('rsvp-guest-message');
+
+// guestMessage.addEventListener('focus', function () {
+
+//     clearInterval(autoScrollInterval);
+//     autoScrollInterval = null;
+
+// });
+
+
+
+
+
+
+
+function startAutoScroll() {
+    // Prevent multiple auto-scroll intervals
+    if (autoScrollInterval !== null) return;
+
+    autoScrollInterval = setInterval(() => {
+        const maxScroll =
+            document.documentElement.scrollHeight - window.innerHeight;
+
+        if (window.scrollY < maxScroll) {
+            // Scroll without smooth animation
+            window.scrollBy(0, 2);
+        } else {
+            stopAutoScroll();
+        }
+    }, 30);
+}
+
+function stopAutoScroll() {
+    if (autoScrollInterval !== null) {
+        clearInterval(autoScrollInterval);
+        autoScrollInterval = null;
     }
+}
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    const guestMessage = document.getElementById('rsvp-guest-message');
+
+    if (guestMessage) {
+        guestMessage.addEventListener('click', stopAutoScroll);
+        guestMessage.addEventListener('focus', stopAutoScroll);
+        guestMessage.addEventListener('input', stopAutoScroll);
+    }
+
+});
 
     // window.addEventListener('wheel', () => clearInterval(autoScrollInterval), { passive: true });
     // window.addEventListener('touchstart', () => clearInterval(autoScrollInterval), { passive: true });
