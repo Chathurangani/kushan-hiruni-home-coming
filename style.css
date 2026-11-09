@@ -1451,7 +1451,7 @@ h1 {
 /* Moving Flower Animation Styles */
 .floating-flower-containerbnch {
     position: absolute;
-    top: 4850px;
+    top: 4900px;
     left: 50%;
     transform: translateX(-40%);
     z-index: 2;
