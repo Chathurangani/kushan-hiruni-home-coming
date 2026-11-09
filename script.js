@@ -565,7 +565,8 @@ document.addEventListener('keydown', function (e) {
             const attendanceStatus = selectedRadio ? selectedRadio.value : "I will attend";
             const guestMessage = rsvpMessageInput ? rsvpMessageInput.value.trim() : "";
 
-            const scriptURL = "https://script.google.com/macros/s/AKfycbx29zu3BX2cJjlJW6DdVktkIt6SV3t4NXqODKGomSAC519NKos2K4nsXqD_z48lXbEf/exec";
+            const scriptURL = "https://script.google.com/macros/s/AKfycbzCViQE-GmfOtF9ItzwF2XKvPLOvG7wmtSfXT3HjWmTkTY8VVR4R3vCln2nTo1QiuOu/exec";
+           // https://script.google.com/macros/s/AKfycbzCViQE-GmfOtF9ItzwF2XKvPLOvG7wmtSfXT3HjWmTkTY8VVR4R3vCln2nTo1QiuOu/exec
 
             const formData = new FormData();
             formData.append("Name", guestName);
@@ -596,8 +597,8 @@ document.addEventListener('keydown', function (e) {
     }
 
     // --- WISHES / GUESTBOOK INTEGRATION ---
-    const WISHES_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwTiHrKxIo0vlDo_WZz0RfFAbHbC5tTyyCkUpaomB0-89XtW68993sBTMwe8fTrNn5uFg/exec';
-    
+    const WISHES_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx7NHV0uP7EHVPuse5Dgr5gdC3OzZvHSihX7AiObWmddYW0Op81kklOWivMq9kEz-nL/exec';
+    //https://script.google.com/macros/s/AKfycbx7NHV0uP7EHVPuse5Dgr5gdC3OzZvHSihX7AiObWmddYW0Op81kklOWivMq9kEz-nL/exec
     // Initial fetch of wishes
     fetchWishes();
 
@@ -688,7 +689,7 @@ document.addEventListener('keydown', function (e) {
 function updateCountdown() {
     // December 12, 2026 at 11:00 AM
     const receptionDate = new Date(
-        "2026-12-12T11:00:00+05:30"
+        "2026-12-13T18:30:00+05:30"
     ).getTime();
 
     const now = new Date().getTime();

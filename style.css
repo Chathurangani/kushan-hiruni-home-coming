@@ -1,11 +1,11 @@
 :root {
 
-    --primary-bg: #08291d;      
+    --primary-bg: #350505;      
     --card-bg: #fdfbf7;          
     --accent-gold: #d4af37;    
-    --text-dark: #163b2f;       
+    --text-dark: #8a2328;       
     --text-light: #f3e9e1;       
-    --burgundy: #163b2f;
+    --burgundy: #991b1b;
 }
 
 /* :root {
@@ -250,7 +250,7 @@ h1 {
     inset: 0;
     width: 100%;
     height: 100%;
-    background: rgba(15, 46, 34, 0.97);
+    background: #691212;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -268,7 +268,7 @@ h1 {
 
 /* INVITATION CARD */
 .cover-card {
-    background: #0f2e22;
+    background: #691212;
     color: white;
     width: 100%;
     max-width: 420px;
@@ -368,7 +368,7 @@ h1 {
 
 /* GUEST BOX */
 .guest-box {
-    background: #0b3023;
+    background: #691212;
     padding: 15px;
     border-radius: 8px;
     margin: 20px 0;
@@ -398,7 +398,7 @@ h1 {
 /* OPEN BUTTON */
 .open-btn {
     background: var(--accent-gold);
-    color: #0f2e22;
+    color: #691212;
     border: none;
     padding: 12px 50px;
     font-size: 1.1rem;
@@ -460,6 +460,7 @@ h1 {
 .envelope-section {
     text-align: center;
     margin-bottom: 40px;
+    
 }
 
 .envelope-container {
@@ -469,13 +470,15 @@ h1 {
     margin: 0 auto 20px auto;
     border-radius: 12px;
     overflow: hidden;
-    background: #163b2f;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(212, 175, 55, 0.3);
+    background: #691212;
+    box-shadow: 0 20px 40px rgba(153, 44, 44, 0.6), 0 0 0 1px rgba(185, 142, 54, 0.3);
+   
 }
 
 .envelope-container:hover {
     transform: translateY(-5px);
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(212, 175, 55, 0.5);
+    box-shadow: 0 25px 50px rgba(153, 51, 51, 0.7), 0 0 0 1px rgba(212, 175, 55, 0.5);
+    
 }
 
 .envelope-container img {
@@ -485,6 +488,17 @@ h1 {
     object-position: top center;
     border-radius: 0;
     box-shadow: none;
+
+
+    background: radial-gradient(circle at center, #88743d 0%, #740f1d 70%);
+    
+    /* Adds a subtle outer gold box-shadow glow */
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.25); 
+    
+    padding: 40px;
+    border-radius: 16px;
+    text-align: center;
+    margin-bottom: 48px;
 }
 
 /* .info-card {
@@ -498,13 +512,13 @@ h1 {
 } */
 
 .info-card {
-    background: #163b2f;
+    background: #691212;
     border-radius: 12px;
     padding: 35px 20px;
     margin-bottom: 30px;
     text-align: center;
     border: 5px solid rgba(143, 115, 24, 0.4);
-    box-shadow: 0 8px 20px rgba(177, 235, 43, 0.3);
+    box-shadow: 0 8px 20px rgba(100, 12, 12, 0.3);
 }
 
 .info-card h3 {
@@ -634,7 +648,7 @@ h1 {
     border-radius: 16px;
     overflow: hidden;
 
-    background: #153426;
+    background: #691212;
 
     filter: brightness(60%);
 
@@ -917,7 +931,7 @@ h1 {
 
 
 .calendar-box {
-    background: #03241b; /* Your emerald green background */
+    background: #691212; /* Your emerald green background */
     color: #ffffff;      /* Changes all text/numbers inside the box to white */
     border-radius: 10px;
     padding: 20px;
@@ -1029,7 +1043,7 @@ h1 {
 }
 
 .guestbook-form {
-    background: F#08291d;
+    background: F#691212;
     color: rgb(255, 255, 255);
     padding: 25px 20px;
     border-radius: 10px;
@@ -1081,7 +1095,7 @@ h1 {
 }
 
 .wish-item {
-    background: rgb(14, 58, 14);
+    background: #691212;
     color: rgb(206, 205, 178);
     padding: 15px;
     border-radius: 8px;
@@ -1114,7 +1128,7 @@ h1 {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: #163b2f;
+    background: #691212;
     color: var(--accent-gold);
     width: 45px;
     height: 45px;
@@ -1149,7 +1163,7 @@ h1 {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(22, 59, 47, 0.9);
+    background: #691212;
     color: var(--accent-gold);
     border: 1px solid var(--accent-gold);
     width: 38px;
@@ -1166,7 +1180,7 @@ h1 {
 
 .gallery-arrow:hover {
     background: var(--accent-gold);
-    color: #163b2f;
+    color: #691212;
     transform: translateY(-50%) scale(1.1);
 }
 
@@ -1242,7 +1256,7 @@ h1 {
 
 .rsvp-modal-content {
     background: #cfc287;
-    color: #163b2f;
+    color: #691212;
     width: 100%;
     max-width: 420px;
     padding: 30px 25px;
@@ -1278,7 +1292,7 @@ h1 {
 
 .rsvp-modal-content h2 {
     font-size: 1.5rem;
-    color: #163b2f;
+    color: #691212;
     margin-bottom: 8px;
 }
 
@@ -1308,7 +1322,7 @@ h1 {
     border-radius: 8px;
     font-family: 'Lora', serif;
     background: #da9b5d;
-    color: #163b2f;
+    color: #691212;
     font-size: 0.9rem;
 }
 
@@ -1349,19 +1363,19 @@ h1 {
 }
 
 .rsvp-radio-card.selected {
-    border-color: #163b2f;
+    border-color: #691212;
     background: #f0f7f4;
     font-weight: bold;
 }
 
 .rsvp-radio-card.selected .radio-icon {
-    background: #163b2f;
+    background: #691212;
     color: #fff;
-    border-color: #163b2f;
+    border-color: #691212;
 }
 
 .rsvp-submit-btn {
-    background: #163b2f;
+    background: #691212;
     color: #d4af37;
     border: 1px solid #d4af37;
     width: 100%;
@@ -1376,7 +1390,7 @@ h1 {
 }
 
 .rsvp-submit-btn:hover {
-    background: #0f2e22;
+    background: #691212;
 }
 
 /* Moving Flower Animation Styles */
@@ -1584,7 +1598,7 @@ h1 {
 
 
 #guest-name {
-    color: #062915 !important; /* Gold */
+    color: #691212 !important; /* Gold */
     font-weight: 600;
 }
 
