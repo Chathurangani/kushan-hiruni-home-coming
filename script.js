@@ -314,10 +314,10 @@ const swiper = new Swiper('.mySwiper', {
 
     loop: true,
 
-    speed: 900,
+    speed: 1000,
 
     autoplay: {
-        delay: 500,
+        delay: 2500,
          disableOnInteraction: false,
         pauseOnMouseEnter: false,
     },
