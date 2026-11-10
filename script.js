@@ -687,7 +687,7 @@ document.addEventListener('keydown', function (e) {
 //========================
 
 function updateCountdown() {
-    // December 12, 2026 at 11:00 AM
+    // December 13, 2026 at 11:00 AM
     const receptionDate = new Date(
         "2026-12-13T18:30:00+05:30"
     ).getTime();

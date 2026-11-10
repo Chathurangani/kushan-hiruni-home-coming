@@ -1,6 +1,6 @@
 :root {
 
-    --primary-bg: #350505;      
+    --primary-bg: #471d1d;      
     --card-bg: #fdfbf7;          
     --accent-gold: #d4af37;    
     --text-dark: #8a2328;       
@@ -977,8 +977,8 @@ h1 {
 } */
 
 .highlight-date {
-    background: linear-gradient(135deg, #f9e3a3, #d4af37, #b8860b);
-    color: #ffffff;
+    background: linear-gradient(135deg, #163b2f, #163b2f, #163b2f);
+    color: #dfb956;
 
     width: 34px;
     height: 34px;
@@ -999,7 +999,7 @@ h1 {
 
 @keyframes heartBeat {
     0%, 100% {
-        transform: scale(1);
+        transform: scale(2.3);
     }
 
     50% {
@@ -1465,7 +1465,7 @@ h1 {
 /* Moving Flower Animation Styles */
 .floating-flower-containerbnch {
     position: absolute;
-    top: 4900px;
+    top: 4250px;
     left: 50%;
     transform: translateX(-40%);
     z-index: 2;
@@ -1563,6 +1563,7 @@ h1 {
 }
 
 .countdown-box h4 {
+    color: #074914;
     color: var(--accent-gold);
     margin-bottom: 15px;
     font-size: 1.1rem;
@@ -1577,7 +1578,7 @@ h1 {
 
 .countdown-item {
     background: var(--accent-gold);
-    color: #fff;
+    color: #074914;
     border-radius: 8px;
     padding: 12px 10px;
     min-width: 65px;
